@@ -89,8 +89,10 @@ public class Panel_Local extends javax.swing.JFrame {
 		botonClientes.addActionListener(abrirClientes());
 		botonProv.addActionListener(abrirProveedores());
 	}
-	/*Void usado para mostrar el avance de la carga del sistema en el splashframe*/
 
+	/**
+	 * Función usada para mostrar el progreso de la carga del sistema en el splashframe
+	 */
 	private void setProgress(int percent, String information) {
 		splashFrame.getJLabel().setText(information);
 		splashFrame.getJProgressBar().setValue(percent);
